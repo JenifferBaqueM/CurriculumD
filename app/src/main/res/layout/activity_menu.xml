@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="208dp"
+            android:text="Datos Personales" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginEnd="61dp"
+            android:text="Estudios Realizados" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginBottom="122dp"
+            android:text="Experiencia Laboral" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignTop="@+id/textView3"
+            android:text="Referencia Laboral" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="59dp"
+            android:layout_height="67dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginStart="67dp"
+            android:onClick="irDatospersonales"
+            app:srcCompat="@drawable/ic_action_datopersonal" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="66dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="88dp"
+            android:layout_marginTop="123dp"
+            android:onClick="irEstudiosRealizados"
+            app:srcCompat="@drawable/ic_action_estudiosrealizados" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="61dp"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_marginBottom="158dp"
+            android:onClick="irExperienciaLaboral"
+            app:srcCompat="@drawable/ic_action_experiencialaboral" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_alignTop="@+id/imageView4"
+            android:onClick="irReferenciaPersonal"
+            app:srcCompat="@drawable/ic_action_referencialaboral" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
